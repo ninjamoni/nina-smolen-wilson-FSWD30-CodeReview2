@@ -31,6 +31,26 @@ a {
 	color:  #fff;
 }
 
+header h2 a:before {
+	content: '';
+	width: 200px;
+	height: 50px;
+	background:  #ffee10;
+	transition:  .5s;
+	transform: scale(.9);
+	z-index:  -1;
+}	
+
+header h2 a:hover:before {
+	transform:  scale(1.5);
+	text-shadow: 0 0 15px #ffee10
+}
+
+header h2 a:hover {
+	color:  #ffee10;
+	text-shadow: 0  0 5px #ffee10;
+}
+
 section {
 	 background-color: #e5eaee; 
 }
@@ -42,11 +62,15 @@ section {
 
 figure {
 	margin-top: 55px;
-	width:  42%;
-	border: 1px;
+	width:  40%;
+	border: 2px;
 	border-color: #ccc;
 	background-color: #fff;
-	box-shadow: 2px 2px 2px 2px #cccc
+	box-shadow: 3px 3px 3px 3px #cccc;
+}
+
+figure:hover {
+	transform:  scale(1.1);
 }
 
 figcaption {
@@ -62,12 +86,13 @@ figcaption div {
 }
 
 figcaption p {
-	padding: 5px;
+	padding: 5px;	
 }
 
 .text {
 	text-align: center;
 	margin-top:  60px;
+	color: #666;
 }
 
 .text p {
@@ -76,12 +101,21 @@ figcaption p {
 	letter-spacing: 0px;
 }
 .right {
-	text-align:  right;
+	text-align: right;
+
 }
 .city {
 	color:  #4eadd6;
 	font-weight: bold;
 	font-size: 24px;
+	font-weight: bold;
+	width: 150px;
+	height: 40px;
+	margin:  0;
+}
+.city:hover {
+	transform: scale(1.1);
+    color: #288c86;
 }
 
 .country {
@@ -116,8 +150,15 @@ figcaption p {
 	font-weight: bold;
 	letter-spacing: 2px;
 }
+
+#diff:hover {
+	transform:  scale(1.2);
+}
+
 footer p{
 	text-align:  center;
 	padding: 20px;
 	background-color: #ddd;
+	color: #666;
+	font-size: 14px;
 }
